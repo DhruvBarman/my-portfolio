@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interests</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+    background: linear-gradient(180deg, #0b0f19 0%, #111827 50%, #1e1b4b);
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #dfe5ec;
+    margin: 0;
+    padding: 0;
+    background-color: #11172a;
+} 
+
+.interests-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    padding-top: 10px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #f5f5f5;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 4px 4px 4px rgba(156, 160, 208, 0.5);
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+p {
+    color: #dfe5ec;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+}   
+
+.l1 {
+    color: #ff6f61;
+    padding-bottom:10px;
+    padding-top: 10px;
+    font-size: 24px;
+    
+    width: fit-content;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px rgba(227, 162, 156, 0.5);
+}
+
+.l2 {
+    color: #4ecdc4;
+    padding-bottom:10px;
+    padding-top: 10px;
+    font-size: 24px;
+    
+    width: fit-content;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px rgba(169, 223, 242, 0.5);
+}
+
+.l3 {
+    color: hsl(117, 94%, 61%);
+    padding-bottom:10px;    
+    padding-top: 10px;
+    font-size: 24px;
+    width: fit-content;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px rgba(165, 248, 191, 0.5);
+}
+
+.l4 {
+    color: hsl(30, 92%, 58%);
+    padding-bottom:10px;
+    padding-top: 10px;
+    font-size: 24px;
+    
+    width: fit-content;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px rgba(240, 195, 157, 0.5);
+}
+
+/* .page-nav {
+    width: min(100%, 900px);
+    margin: 0 auto 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px 16px;
+    color: #dfe5ec;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    background: rgba(17, 24, 39, 0.78);
+    border: 1px solid rgba(223, 229, 236, 0.16);
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+    transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.page-nav a span {
+    color: #dfe5ec;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.page-nav a:hover {
+    background: #1e1b4b;
+    border-color: rgba(223, 229, 236, 0.35);
+    transform: translateY(-2px);
+}
+
+.page-nav a:focus-visible {
+    outline: 2px solid #dfe5ec;
+    outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+    .page-nav {
+        margin-bottom: 22px;
+    }
+
+    .page-nav a {
+        padding: 9px 13px;
+        font-size: 14px;
+    }
+} */
+    .page-nav {
+    width: min(100%, 900px);
+    margin: 14px auto 28px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.page-nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px 16px;
+    color: #dfe5ec;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    background: rgba(17, 24, 39, 0.78);
+    border: 1px solid rgba(223, 229, 236, 0.16);
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+    transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.page-nav a span {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.page-nav a:hover {
+    background: #1e1b4b;
+    border-color: rgba(223, 229, 236, 0.35);
+    transform: translateY(-2px);
+}
+
+.page-nav a:focus-visible {
+    outline: 2px solid #dfe5ec;
+    outline-offset: 3px;
+}
+    </style>
+</head>
+<body>
+    <nav class="page-nav" aria-label="Page navigation">
+    <a class="home-link" href="portfolio.html">
+        <span aria-hidden="true">⌂</span> Home
+    </a>
+    </nav>
+    <h1>My Interests</h1>
+    <ul class="interests-list">
+        <li class="l1">Web Development</li>
+        <p>Web development is a field that I am passionate about.</p>
+        <p>I enjoy creating websites and web applications that are both functional and aesthetically pleasing.</p>
+        <p>I am currently learning and exploring basic web development and also new technologies in this domain.</p>
+        <p>Currently I am focusing on improving my skills in HTML, CSS, and learning JavaScript.</p>
+        <li class="l2">Programming</li>
+        <p>Programming is another area that I am deeply interested in.</p>
+        <p>I am currently learning C language as my college syllabus includes it.</p>
+        <p>I also want to explore other programming languages and frameworks, like JavaScript, Python, C++ etc.</p>
+        <p>I enjoy solving problems through programming.</p>
+        <p>Computer programming fascinates me from a very young age.</p>
+        <li class="l3">Chess</li>
+        <p>Chess is a game that I have been playing for a long time.</p>
+        <p>I enjoy the strategic and tactical aspects of the game.</p>
+        <p>I have played in many International, National and State level tournaments, won many prizes.</p>
+        <li class="l4">Tabla playing</li>
+        <p>Tabla is a musical instrument that I have been learning since my sixth grade.</p>
+        <p>I enjoy playing the tabla in my free time and have also performed in few cultural events.</p>
+    </ul>
+</body>
+</html>

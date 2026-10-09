@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+/* body {
+    background: linear-gradient(180deg, #0b0f19 0%, #111827 50%, #1e1b4b);
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #dfe5ec;
+    margin: 0;
+    padding: 0;
+    background-color: #11172a;
+} 
+
+h1 {
+    color: #f5f5f5;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 4px 4px 4px rgba(156, 160, 208, 0.5);
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+h2 {
+    color: #dfe5ec;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(156, 160, 208, 0.5);
+    padding-top: 10px;
+    font-size: 24px;
+}
+
+.primary {
+    color: #dfe5ec;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.high {
+    color: #dfe5ec;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.higher {
+    color: #dfe5ec;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+}
+.profile-image {
+  width: 600px;
+  height: 300px;
+  object-fit: cover;       
+  object-position: center;
+  border: 4px solid #fff;
+  box-shadow: 0 10px 18px rgb(0, 0, 0, 1);
+} */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 30px 20px 60px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #dfe5ec;
+    background: linear-gradient(180deg, #0b0f19 0%, #111827 50%, #1e1b4b 100%);
+}
+
+h1 {
+    margin: 10px 0 42px;
+    color: #f5f5f5;
+    text-align: center;
+    text-shadow: 4px 4px 4px rgba(156, 160, 208, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: clamp(30px, 5vw, 42px);
+}
+
+h2 {
+    max-width: 900px;
+    margin: 42px auto 18px;
+    color: #dfe5ec;
+    text-align: left;
+    text-shadow: 2px 2px 2px rgba(156, 160, 208, 0.5);
+    font-size: 24px;
+}
+
+/* Each school section becomes a neat content card */
+.primary,
+.high,
+.higher {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    text-align: left;
+    font-size: 17px;
+    line-height: 1.8;
+    background: rgba(17, 24, 39, 0.72);
+    border: 1px solid rgba(223, 229, 236, 0.14);
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.profile-image {
+    display: block;
+    flex: 0 0 40%;
+    width: 40%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border: 3px solid #dfe5ec;
+    border-radius: 12px;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.45);
+}
+
+.primary p,
+.high p,
+.higher p {
+    margin: 0;
+}
+
+@media (max-width: 680px) {
+    body {
+        padding: 24px 16px 40px;
+    }
+
+    h1 {
+        margin-bottom: 32px;
+    }
+
+    h2 {
+        margin-top: 30px;
+        font-size: 21px;
+    }
+
+    .primary,
+    .high,
+    .higher {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+        padding: 18px;
+        font-size: 16px;
+    }
+
+    .profile-image {
+        flex: auto;
+        width: 100%;
+        height: 220px;
+    }
+}
+
+/* .page-nav {
+    width: min(100%, 900px);
+    margin: 0 auto 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px 16px;
+    color: #dfe5ec;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    background: rgba(17, 24, 39, 0.78);
+    border: 1px solid rgba(223, 229, 236, 0.16);
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+    transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.page-nav a span {
+    color: #dfe5ec;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.page-nav a:hover {
+    background: #1e1b4b;
+    border-color: rgba(223, 229, 236, 0.35);
+    transform: translateY(-2px);
+}
+
+.page-nav a:focus-visible {
+    outline: 2px solid #dfe5ec;
+    outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+    .page-nav {
+        margin-bottom: 22px;
+    }
+
+    .page-nav a {
+        padding: 9px 13px;
+        font-size: 14px;
+    }
+} */
+    .page-nav {
+    width: min(100%, 900px);
+    margin: 14px auto 28px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.page-nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px 16px;
+    color: #dfe5ec;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    background: rgba(17, 24, 39, 0.78);
+    border: 1px solid rgba(223, 229, 236, 0.16);
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+    transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.page-nav a span {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.page-nav a:hover {
+    background: #1e1b4b;
+    border-color: rgba(223, 229, 236, 0.35);
+    transform: translateY(-2px);
+}
+
+.page-nav a:focus-visible {
+    outline: 2px solid #dfe5ec;
+    outline-offset: 3px;
+}
+    </style>
+</head>
+<body>
+    <nav class="page-nav" aria-label="Page navigation">
+    <a class="home-link" href="portfolio.html">
+        <span aria-hidden="true">⌂</span> Home
+    </a>
+    </nav>
+    <h1>Journey of Learning</h1>
+    <h2>Primary School</h2>
+
+    <div class="primary">
+        <img class="profile-image" src="C:\Users\Netajee Barman\Webdev projects\images\primaryschool.jpeg" alt="Sri Aurobindo Patha Bhavan">
+        <p>
+            I completed my primary schooling at Sri Aurobindo Patha Bhavan, where I studied from LKG through Class 4. Those early school years gave me much more than an education—they gave me lasting friendships, happy memories, and experiences that I still cherish. The teachers, classmates, and everyday moments made that time special and helped shape some of my earliest memories of school.
+        </p>
+    </div>
+    <br>
+    <h2>High School</h2>
+    <div class="high">
+        <img class="profile-image" src="C:\Users\Netajee Barman\Webdev projects\images\Screenshot 2026-10-09 213441.png" alt="Coochbehar Rambhola High School">
+        <p> 
+            I completed my entire schooling, from Class 5 to Class 12, at Coochbehar Rambhola High School between 2018 and 2026. Over these eight years, the school was where I built my academic foundation and grew from a curious kid into a focused student.
+            I scored 675 out of 700 in my Class 10 board examinations, and later chose the science stream with Physics, Chemistry, Mathematics and Biology for my 10+2, finishing with 468 out of 500. Studying all four subjects together taught me discipline, consistency and how to balance different ways of thinking, from the logic of mathematics to the detail of biology.
+            My years at Rambhola shaped both my academics and my character, and I'm grateful to my teachers and classmates who supported me along the way.
+        </p>
+    </div>
+    <br>
+    <h2>University</h2>
+    <div class="higher">
+        <img class="profile-image" src="C:\Users\Netajee Barman\Webdev projects\images\Screenshot 2026-10-09 214841.png" alt="IIT (ISM) Dhanbad">
+        <p>
+            I'm currently pursuing my Bachelor of Technology(B.Tech) in Computer Science and Engineering(CSE) at IIT (ISM) Dhanbad, and I expect to graduate in 2030.
+            I'm building my foundation in computer science, improving my coding skills, and a lot more.
+            Also enjoying college life by taking part in campus events, workshops, and the many experiences IIT (ISM) has to offer. I'm also making memories with friends, meeting people with different perspectives, and learning beyond the classroom.
+        </p>
+    </div>
+</body>
+</html>
